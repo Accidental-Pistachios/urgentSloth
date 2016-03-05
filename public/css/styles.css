@@ -143,7 +143,7 @@ body {
 }
 
 .scroll {
-  height:128px;
+  height: 140px;
   overflow-x: auto;
 }
 
@@ -505,6 +505,11 @@ header .mobile {
   margin: 20px auto;
 }
 
+.well.vertical.collapse.in {
+  padding: 5px;
+  margin: 5px;
+}
+
 /*MEDIA QUERY*/
 @media only screen and (max-width : 720px) {
 
@@ -547,8 +552,8 @@ header .mobile {
     margin-top: 20px;
     padding: 2px 2px 2px 2px;
     border-radius: 50%;
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
     opacity: 0.5;
     /*display:none;  Button only visible on hover */
   }
@@ -559,9 +564,18 @@ header .mobile {
     padding-top: 5px;   
   }
   
-  .event, .eventTitle, .eventSubtitle {
+  .event, .eventHeader, .eventTitle, .eventSubtitle {
     margin: 5px;
     padding: 5px;
+  }
+
+  .event.create {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .eventTitle {
+    font-size: 25px;
   }
 
   .col-xs-9 {
@@ -572,4 +586,9 @@ header .mobile {
     max-width:50px;
     font-size: 70%;
   }
+
+  h2, h3 {
+    font-size: 18px;
+  }
+
 }
